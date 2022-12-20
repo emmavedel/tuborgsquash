@@ -1,29 +1,34 @@
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+    color: black;
     text-decoration: none;
     list-style-type: none;
-    font-family: 'Krona One', sans-serif;
+    font-family: impact;
 }
 
 body{
-background-color: black;
+background-color: #ffedcd;
 display: flex;
+background-image: url(img/wave6.png);
+background-repeat: no-repeat;
+background-attachment: fixed;
 }
 
+/*forside*/
 .kategori-billeder {
     width: 50%;
 }
 
-#forside-billede img {
+#forside-tekst img {
     width: 100%;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 
-#forside-billede-web {
+#forside-tekst-web {
     display: none;
 }
 
@@ -31,91 +36,69 @@ display: flex;
     width: 8rem;
 }
 
-h1 {
-    font-size: 2rem;
-    position: absolute;
-    padding-top: 2.5rem;
-    padding-left: 1.1rem;
+
+h2 {
+    color: #ffbd91;
+    padding-top: 14.5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+   
 }
 
-h1 span {
-    color: #EF8A37;
-   padding-left: 4rem;
-} 
-
-h3,h2 {
-    font-size: 2rem;
+#forside-tekst h3 {
+    text-align: center;
+    padding-top: 1.5rem;
 }
 
-/* Style the navigation menu */
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-  }
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
+h3 {
+    color: white;
+}
+
+h4 {
+    color: white;
+}
+
+h5 {
+    color: black;
+}
+
+.forside-billeder a:hover {
+    transform: translate(0,-10px);
+}
+
+
+  /* Gemmer links i menu */
   .topnav #mylinks {
     display: none;
   }
-  
-  /* Style navigation menu links */
+
+  /* Style af menu links */
   .topnav a {
-    color: white;
+    color: #ffbd91;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     display: block;
   }
 
-  #mylinks a {
-    text-align: center;
-  }
   
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: black;
-    font-size: 2.5rem;
-  }
-
- #burgermenu {
-    font-size: 2.5rem;
-    transition: .6s;
- }
-  
-  /* Add a grey background color on mouse-over */
-  #mylinks a:hover {
-    background-color: #EF8A37;
-    color: black;
-  }
-  
-  /* Style the active link (or home/logo) */
+  /* Style af mouse over*/
   .active {
-    background-color: black;
-    color: white;
+    background-color: #ffedcd;
+    color: #ffbd91;
   }
 
-
-
-
-
-/* Kategori billeder */
-
+/* Forside billeder, mus over */
 #forside-kategori a{
     background-color:white;
     border-radius: 5px;
-    padding: 0.3rem 0.9rem;
-    font-size: 1rem;
+    padding: 1.3rem 2.9rem;
+    font-size: 1.5rem;
 }
 
 #forside-kategori a {
     color: black;
-    background-color: #EF8A37;
+    background-color: #ffbd91;
 }
 
 #forside-kategori a:hover {
@@ -123,6 +106,7 @@ h3,h2 {
     color: black;
     cursor: pointer;
 }
+
 
 #forside-kategori section{
     display: flex;
@@ -135,26 +119,28 @@ h3,h2 {
     margin: 1.5rem;
 }
 
+/*øverste tekst på forside*/ 
+#forside-tekst h2 {
+    padding-top: 6.5rem;
+    font-size: 3rem;
+}
 
-/*GRISK info tekst*/
-
-#grisk-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5rem 3rem;
+#forside-tekst {
     text-align: center;
-    line-height: 1.5rem;
+    padding: 2rem;
+    padding-top: 0rem;
 }
 
-#grisk-info p{
-    padding-top: 1rem;
+#forside-tekst p {
+    padding-top: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
 
+/* Footer*/
 footer {
-    background-color: black;
+    background-color: #ffbd91;
     display: flex;
     flex-direction: column;
 }
@@ -168,9 +154,6 @@ footer {
     padding-top: 4rem;
 }
 
-footer h4 {
-    color: #EF8A37;
-}
 
 .social-media ul {
     position: relative;
@@ -188,12 +171,16 @@ footer h4 {
     margin:0 15px;
 }
 
+/*style af sociale medier ikoner*/
+
 .social-media ul li .fa-brands{
     font-size: 25px;
     line-height: 50px;
     transition: .6s;
-    color: #EF8A37;
+    color: black;
 }
+
+/*style af SoMe tekst*/
 
 .social-media ul li a{
     position: relative;
@@ -201,10 +188,12 @@ footer h4 {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: white;
+    background-color: #ffbd91;
     text-align: center;
     transition: .6s;
 }
+
+/*style af so me, bevæger sig ved mus over*/
 
 .social-media ul li a:hover {
     transform: translate(0,-10px);
@@ -215,38 +204,41 @@ footer h4 {
     align-items: center;
 }
 
-/*TATTOO*/
+/*SMAGSVARIANTER*/
 
-#tattoo-site {
+.smage-underside {
     width: 100%;
-    background-color:#3a3939;
+    display: flex;
+    
 }
 
-.aftercare img {
+#smagsvarianter-site {
     width: 100%;
+    background-color: #ffedcd;
+    margin-top: 0.2rem;
 }
 
-.tat-artist img {
-    width: 15rem;
+.sodavandsdaese img {
+    width: 28rem;
     display: flex;
 }
 
-.tattoo-sektion h4 {
-    text-align: center;
-    padding-top: 5rem;
+.smagsvarianter-main h2 {
+    padding-top: 6.5rem;
 }
 
-.tattoo-main {
+.smagsvarianter-main {
     text-align: center;
     padding: 2rem;
-    padding-top: 4rem;
+    padding-top: 0rem;
 }
 
-.tattoo-main p {
+
+.smagsvarianter-main p {
     padding-top: 2rem;
 }
 
-.artists {
+.forskellige-smage {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -254,105 +246,90 @@ footer h4 {
     padding-top: 1rem;
 }
 
-.tat-artist {
+.forskellige-smage a:hover {
+    transform: translate(0,-10px);
+}
+
+.sodavandsdaese {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 5rem 5rem 5rem;
+    padding: 0.5rem 1rem 1rem 1rem;
     text-align: center;
+    width: 40%;
 }
 
-.tat-artist h5 {
-    color: #EF8A37;
+.sodavandsdaese h5 {
+    color: black;
     font-size: 1.5rem;
     position: absolute;
     padding-top: 16rem;
 }
 
 
-.tat-artist .instagram-link {
-    color: #EF8A37;
-    position: absolute;
-    padding-top: 18rem;
-}
-
-.book-nu {
-    background-color: #EF8A37;
+.laes-mere {
+    background-color: #ffbd91;
     color: black;
     margin-top: 1.5rem;
     padding: 0.7rem;
 }
 
-.book-nu a:hover{
+.laes-mere a:hover{
     cursor: pointer;
+    
 }
 
-.tat-artist p {
+.sodavandsdaese p {
     margin-top: 1rem;
     font-size: 0.9rem;
 }
 
-.aftercare {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
-    padding-bottom: 5rem;
-}
-.aftercare h4 {
-    padding-bottom: 1.5rem;
-}
 
-.aftercare p {
-    padding: 0.5rem 0.5rem 2rem 0.5rem;
-}
-
-.opening-hours {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 1rem;
-    line-height: 1.5rem;
-}
-
-.opening-hours p { 
-    padding: 1rem 1rem;
-}
-
-.opening-hours h4 {
-    padding-bottom: 1rem;
-}
-
-.times {
-    line-height: 5rem;
-    padding: 2rem 0rem;
-}
-
-#tattoo-site h4 {
+#smagsvarianter-site h4 {
     font-size: 1.5rem;
 }
 
-#tattoo-site span {
-    color: #EF8A37;
-}
 
-.artists .book-nu:hover {
+.forskellige-smage .laes-mere:hover {
     background-color: white;
 }
 
-.book-nu {
+.laes-mere {
     border-radius: 0.9rem;
 }
 
 
 
+/*jordbærsodavand underside */
 
-/*Galleri site*/
+.jordbaer {
+    width: 70%;
+}
 
-#galleri-site {
+.jordbaer-sektion p {
+    margin-top: 5%;
+    margin-left: 70%;
+}
+
+/*hyldeblomst underside*/
+
+.hylde {
+    width: 80%;
+}
+
+.appelsin {
+    width: 80%;
+}
+
+.appelsinlight {
+    width: 80%;
+}
+
+/*Konkurrencer site*/
+
+#konkurrencer-site {
     width: 100%;
-    background-color: #3a3939;
+    background-color: #ffedcd;
     padding-bottom: 10rem;
 }
 
@@ -372,59 +349,61 @@ footer h4 {
     max-width: 50%;
 }
 
-#galleri-site h3, p {
+#konkurrencer-site h3, p {
     text-align: center;
 }
 
-#galleri-site h3 {
+#konkurrencer-site h3 {
     padding-top: 3rem;
     padding-bottom: 1rem;
+    color: #ffbd91;
 }
 
-#galleri-site p {
+#konkurrencer-site p {
     padding-bottom: 3rem;
 }
 
-.galleri-tekst {
+.konkurrencer-tekst {
     padding: 3rem 5rem;
 }
 
-#galleri-site span {
-    color: #EF8A37;
+.konkurrencer-tekst img {
+    width: 60%;
+    padding-left: 12rem;
+   
 }
 
-.udforsk-galleri a{
-    background-color: #EF8A37;
+.deltagelse-konkurrence {
+    padding-left: 0%;
+    padding-top: 0%;
+}
+
+.deltagelse-konkurrence a{
+    background-color: #ffbd91;
     color: black;
     margin-top: 1.5rem;
     padding: 0.7rem;
     border-radius: 0.9rem;
 }
 
-.udforsk-galleri {
+.deltagelse-konkurrence {
     text-align: center;
 }
 
-.udforsk-galleri a:hover {
+.deltagelse-konkurrence a:hover {
     background-color: white;
 }
 
 
 /* OM OS side */
 
-#om-os-site {
-    width: 100%;
-    background-color: #3a3939;
-}
-
 #om-os-site h3 {
     text-align: center;
     padding-top: 1.5rem;
+    font-size: 2rem;
+    color: #ffbd91;
 }
 
-#om-os-site span {
-    color: #EF8A37;
-}
 
 .om-os-main {
     display: flex;
@@ -437,8 +416,8 @@ footer h4 {
 
 .om-os-main img {
     width: 50%;
-    height: 25rem; 
-    width: 25rem;
+    height: 30rem; 
+    width: 20rem;
     margin: auto;
     padding-bottom: 2rem;
 }
@@ -452,7 +431,85 @@ footer h4 {
 
 /* Media query */
 
-@media screen and (min-width: 706px) {
+@media screen and (max-width: 667px) {
+
+    .topnav a {
+        color: #ffbd91;
+        padding: 1px 2px;
+        text-decoration: none;
+        font-size: 10px;
+        display: block;
+      }
+
+
+    h1 {
+        margin-top: 20%;
+    }
+
+    #kategori-billeder {
+        width: 100%;
+    }
+
+    .jordbaer {
+        width: 100%;
+    }
+
+    .konkurrencer-tekst img {
+        width: 105%;
+        padding-left: 5rem;
+       
+    }
+
+    #mylinks {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .topnav #mylinks {
+        display: flex;
+        
+    }
+
+    #forside-billede img {
+        width: 100%;
+    }
+
+    #mylinks li a:hover {
+        text-decoration: underline #ffbd91;
+        background-color: #ffedcd;
+        color: white;
+    }
+    
+    .topnav {
+        display: flex;
+        flex-direction:row;
+        background-color: #ffedcd;
+    }
+
+    #mylinks li {
+        display: flex;
+        margin:auto;
+        
+    }
+
+
+    .om-os-main img {
+        height: 22rem; 
+        width: 15rem;
+        margin: auto;
+        padding-bottom: 2rem;
+    }
+
+    #om-os-site h3 {
+        text-align: center;
+        padding-top: 1.5rem;
+        font-size: 1.5rem;
+        color: #ffbd91;
+    }
+
+}
+
+@media screen and (min-width: 667px) {
     #mylinks {
         display: flex;
         flex-direction: row;
@@ -467,27 +524,24 @@ footer h4 {
     }
 
     #mylinks li a:hover {
-        text-decoration: underline #EF8A37;
-        background-color: black;
+        text-decoration: underline #ffbd91;
+        background-color: #ffedcd;
         color: white;
     }
     
     .topnav {
         display: flex;
         flex-direction: row;
-        background-color: black;
+        background-color: #ffedcd;
     
     }
 
     #mylinks li {
         display: flex;
-       margin:auto;
+        margin:auto;
     }
 
-    .topnav a.icon {
-        display: none;
-    }
-
+    
 
     h1 {
         font-size: 280%;
@@ -498,24 +552,17 @@ footer h4 {
         padding-top: 5rem;
     }
 
-    #grisk-info p {
-        padding: 2rem 5rem;
-        font-size: larger;
+    #forside-tekst img {
+        width: 90%;
+        padding-left: 15rem;
+        padding-right: 15rem;
+        padding-top: 10%;
     }
-
-    #grisk-info h3 {
-        padding: 2rem 5rem;
-    }
-
     #forside-billede-web {
         display: block;
     }
 
     #forside-billede-mobile {
-        display: none;
-    }
-
-    #burgermenu {
         display: none;
     }
 
@@ -534,17 +581,33 @@ footer h4 {
         margin: 0;
     }
 
+    .konkurrencer-tekst img {
+        width: 90%;
+        padding-left: 5rem;
+       
+    }
+    
+
 }
 
 
 
 @media screen and (max-width: 987px) {
-    .artists {
+    .forside-tekst {
         display: flex;
         flex-wrap: wrap;
+     
     }
 
-    .tat-artist {
+    #forside-tekst img {
+        width: 100%;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 10%;
+        
+    }
+
+    .sodavandsdaese {
         flex: 33.3%;
         max-width: 33.3%;
     }
@@ -578,17 +641,17 @@ footer h4 {
         max-width: 25%;
     }
 
-    .galleri-tekst {
+    .konkurrencer-tekst {
         padding: 4rem 13rem 2rem 13rem;
     }
 
-    .artists {
+    .forskellige-smage {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
     }
 
-    .tat-artist {
+    .sodavandsdaese {
         flex: 33.3%;
         max-width: 33.3%;
     }
@@ -599,9 +662,15 @@ footer h4 {
         padding: 3rem;
     }
 
+
     .om-os-main p {
         padding: 2rem;
     }
 
+    .konkurrencer-tekst img {
+        width: 75%;
+        padding-left: 15rem;
+       
+    }
 }
 
